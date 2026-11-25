@@ -346,6 +346,46 @@ section { padding: 3rem 0; scroll-margin-top: 64px; }
 }
 
 .team .person { grid-template-columns: 1fr; }
+
+
+.ic { width: 22px; height: 22px; flex: none; }
+.g-logo { width: 16px; height: 16px; flex: none; }
+.callout .g-logo { margin-right: .2rem; }
+.callout strong { font-weight: 700; }
+.proof-tiles strong { font-size: 1.4rem; }
+.proof-bar ul { gap: .8rem; }
+.proof-bar li { gap: .65rem; }
+.proof-bar li > span:last-child { display: flex; flex-direction: column; line-height: 1.2; }
+.proof-bar li strong { color: var(--ink); font-size: .95rem; }
+.proof-bar li small { color: var(--muted); font-weight: 500; font-size: .8rem; }
+.tb-mark { flex: none; width: 2.6rem; height: 2.6rem; border-radius: 10px; background: #fff; border: 1px solid var(--line); display: grid; place-items: center; color: var(--royal); }
+.tb-mark .g-logo { width: 22px; height: 22px; }
+.tb-text { width: auto; min-width: 2.6rem; padding: 0 .45rem; font-family: var(--serif); font-weight: 700; font-size: .78rem; letter-spacing: .02em; color: var(--navy); }
+.mprice { margin: .2rem 0 .5rem; color: #fff; line-height: 1; display: flex; align-items: baseline; gap: .35rem; }
+.mprice strong { font-family: var(--serif); font-size: 3.4rem; color: var(--gold); font-weight: 600; }
+.mprice-from, .mprice-per { font-size: 1.05rem; color: #d6dcea; }
+.mline { color: #e7ebf4; font-size: 1.02rem; max-width: 30em; margin-bottom: 1rem; }
+.mfine { font-size: .82rem; color: #aab4cb; margin: .6rem 0 0; }
+.mtiles { display: grid; grid-template-columns: 1fr 1fr; gap: .7rem; }
+.mtiles li { display: flex; flex-direction: column; gap: .5rem; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.14); border-radius: 14px; padding: .9rem; color: #fff; font-weight: 600; font-size: .95rem; line-height: 1.25; }
+.mtiles .ic { color: var(--gold); width: 26px; height: 26px; }
+.retainer-big h2 { font-size: 1.8rem; }
+.pcard figcaption span + span { margin-top: .1rem; }
+.team-facts { display: grid; gap: .6rem; margin: .2rem 0 .4rem; }
+.team-facts li { display: flex; align-items: center; gap: .6rem; font-size: 1rem; }
+.team-facts .ic { color: var(--royal); width: 20px; height: 20px; }
+.team-facts strong { color: var(--ink); }
+.checks-lg li { margin-bottom: .55rem; }
+@media (min-width: 900px) {
+  .retainer-big { grid-template-columns: 1fr 1.1fr; align-items: center; }
+  .mtiles { grid-template-columns: repeat(3, 1fr); }
+  .retainer-big h2 { font-size: 2.2rem; }
+  .mprice strong { font-size: 4rem; }
+}
+@media (max-width: 719px) {
+  .callout { white-space: normal; flex-wrap: wrap; row-gap: .15rem; font-size: .8rem; }
+  .hero-copy { min-width: 0; }
+}
 </style>
 </head>
 <body>
@@ -373,25 +413,25 @@ section { padding: 3rem 0; scroll-margin-top: 64px; }
     <section class="hero">
       <div class="wrap hero-grid">
         <div class="hero-copy">
-          <p class="callout"><span class="stars" aria-hidden="true">★★★★★</span> Rated 5.0 on Google <span class="dot" aria-hidden="true">·</span> Trusted by 30+ home health agencies and 10+ hospices</p>
+          <p class="callout"><svg class="g-logo" aria-hidden="true" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg><span class="stars" aria-hidden="true">★★★★★</span> <strong>5.0</strong> on Google <span class="dot" aria-hidden="true">·</span> 30+ home health agencies <span class="dot" aria-hidden="true">·</span> 10+ hospices</p>
           <h1>Medicare cost report prep for home health and hospice agencies</h1>
-          <p class="sub">Carl and Christian Soriaga, CPAs, prepare and review your report, then file it through MCReF with your MAC. Agencies nationwide. A written fee quote before we start, and no hourly billing.</p>
+          <p class="sub">Prepared, reviewed and filed by <strong>CPAs Carl and Christian Soriaga</strong>. Flat fee. Nationwide.</p>
 
           <div class="cta-block">
             <a class="btn btn-primary btn-lg" href="#book" data-book>Book a free 20-minute call</a>
             <p class="guarantee-line">
               <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5l-8-3zm-1.2 14.2-3.5-3.5 1.4-1.4 2.1 2.1 4.9-4.9 1.4 1.4-6.3 6.3z"/></svg>
-              <span>If your cost report is rejected because of our work, we fix it at no charge.</span>
+              <span>Rejected because of our work? <strong>We fix it at no charge.</strong></span>
             </p>
           </div>
 
           <ul class="proof-tiles" aria-label="Key facts">
             <li><strong>$1,599.99</strong><span>Flat fee per report</span></li>
-            <li><strong>72 hours</strong><span>Turnaround once your documents are complete</span></li>
-            <li><strong>Since 2003</strong><span>Preparing Medicare cost reports</span></li>
-            <li><strong>5.0 <span class="star" aria-hidden="true">★</span></strong><span>From 20 Google reviews</span></li>
+            <li><strong>72 hrs</strong><span>Once documents are complete</span></li>
+            <li><strong>Since 2003</strong><span>Medicare cost reports</span></li>
+            <li><strong>5.0 <span class="star" aria-hidden="true">★</span></strong><span>20 Google reviews</span></li>
           </ul>
-          <p class="qualifier">For Medicare-certified agencies that already have their CMS approval letter.</p>
+          <p class="qualifier">For Medicare-certified agencies with a CMS approval letter.</p>
         </div>
 
         <aside class="call-card" aria-labelledby="call-card-title">
@@ -411,14 +451,14 @@ section { padding: 3rem 0; scroll-margin-top: 64px; }
             </div>
             <figcaption>A 60-second hello from Christian</figcaption>
           </figure>
-          <p class="call-card-label">On the call we will cover:</p>
+          <p class="call-card-label">On the call:</p>
           <ul class="checks">
-            <li>Your situation and what is due next</li>
-            <li>Deadlines and filing status</li>
-            <li>A clear written fee quote</li>
-            <li>Clear next steps, no obligation</li>
+            <li>What's due next</li>
+            <li>Deadline and filing status</li>
+            <li>A written fee quote</li>
+            <li>No pitch, no obligation</li>
           </ul>
-          <p class="call-card-note">Christian prepares Medicare cost reports and hosts every free call. No pitch deck, no pressure.</p>
+          
           <a class="btn btn-primary btn-block" href="#book" data-book>Book a free 20-minute call</a>
           <p class="call-card-foot">or call <a href="tel:+16304911268">(630) 491-1268</a></p>
         </aside>
@@ -430,12 +470,12 @@ section { padding: 3rem 0; scroll-margin-top: 64px; }
         <div class="section-head">
           <p class="kicker">Google reviews</p>
           <h2 id="reviews-title">5.0 stars from 20 Google reviews</h2>
-          <p class="muted">From a hospice, a home health agency, and a client who worked with Christian. Quoted exactly as they appear on our site.</p>
+          <p class="muted">Quoted exactly as on Google.</p>
         </div>
         <div class="review-grid">
           <figure class="review review-feature">
             <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
-            <blockquote><p>“Soriaga &amp; Associates LLC has expertly handled our Medicare Cost Report preparation and filing for several years. They are reliable professionals ensuring compliance and efficiency in filling out cost reports. They respond quickly to emails and provide proactive support.”</p></blockquote>
+            <blockquote><p>“Soriaga &amp; Associates LLC has expertly handled our Medicare Cost Report preparation and filing for several years. … They respond quickly to emails and provide proactive support.”</p></blockquote>
             <figcaption>Hospice client <span>Google review, cost reports</span></figcaption>
           </figure>
           <figure class="review">
@@ -445,7 +485,7 @@ section { padding: 3rem 0; scroll-margin-top: 64px; }
           </figure>
           <figure class="review">
             <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
-            <blockquote><p>“Christian was extremely helpful, professional, and knowledgeable throughout the entire process. He made everything straightforward, answered all my questions, and ensured everything was handled smoothly and efficiently.”</p></blockquote>
+            <blockquote><p>“Christian was extremely helpful, professional, and knowledgeable throughout the entire process. He made everything straightforward…”</p></blockquote>
             <figcaption>Alex <span>Google review, business tax returns</span></figcaption>
           </figure>
         </div>
@@ -455,11 +495,11 @@ section { padding: 3rem 0; scroll-margin-top: 64px; }
     <div class="proof-bar" aria-label="Credentials">
       <div class="wrap">
         <ul>
-          <li><span class="badge-mark" aria-hidden="true">AICPA</span>AICPA member</li>
-          <li><span class="badge-mark" aria-hidden="true">ICPAS</span>Illinois CPA Society member</li>
-          <li><span class="badge-mark" aria-hidden="true">50+</span>50 to 100 Medicare cost reports a year</li>
-          <li><span class="badge-mark" aria-hidden="true">MCReF</span>Filed through MCReF to any MAC</li>
-          <li><span class="badge-mark" aria-hidden="true">30+</span>Trusted by 30+ home health agencies, 10+ hospices</li>
+          <li><span class="tb-mark tb-google"><svg class="g-logo" aria-hidden="true" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg></span><span><strong>5.0 on Google</strong><small>20 reviews</small></span></li>
+          <li><span class="tb-mark tb-text">AICPA</span><span><strong>AICPA</strong><small>Member firm</small></span></li>
+          <li><span class="tb-mark tb-text">ICPAS</span><span><strong>Illinois CPA Society</strong><small>Member firm</small></span></li>
+          <li><span class="tb-mark"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4z"/></svg></span><span><strong>CMS MCReF</strong><small>E-filed to any MAC</small></span></li>
+          <li><span class="tb-mark"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg></span><span><strong>50 to 100</strong><small>Cost reports a year</small></span></li>
         </ul>
       </div>
     </div>
@@ -467,20 +507,20 @@ section { padding: 3rem 0; scroll-margin-top: 64px; }
     <section class="pricing" id="pricing" aria-labelledby="pricing-title">
       <div class="wrap">
         <div class="section-head">
-          <p class="kicker">What you get</p>
-          <h2 id="pricing-title">Your whole cost report, done for one flat fee</h2>
+          <p class="kicker">Flat-fee pricing</p>
+          <h2 id="pricing-title">One flat fee. Everything included.</h2>
         </div>
         <div class="price-layout">
           <div class="stack card">
-            <h3>Included in every flat fee</h3>
+            <h3>Every flat fee includes</h3>
             <ul class="checks checks-lg">
-              <li><strong>Your complete Medicare cost report</strong>: CMS-1728-20 for home health or CMS-1984-14 for hospice</li>
-              <li><strong>CPA review</strong> before anything is filed</li>
-              <li><strong>You approve it</strong> before it goes out</li>
-              <li><strong>Electronic filing through MCReF</strong> with your MAC</li>
-              <li><strong>A document checklist</strong> when we begin</li>
-              <li><strong>72-hour turnaround</strong> once your documents are complete</li>
-              <li><strong>Updates from your CPA team</strong> until it is filed</li>
+              <li><strong>Complete cost report</strong> (CMS-1728-20 or CMS-1984-14)</li>
+              <li><strong>CPA review</strong> before filing</li>
+              <li><strong>You approve</strong> before it goes out</li>
+              <li><strong>MCReF e-filing</strong> with your MAC</li>
+              <li><strong>Document checklist</strong> to start</li>
+              <li><strong>72-hour turnaround</strong> once docs are complete</li>
+              <li><strong>Updates</strong> until it is filed</li>
             </ul>
           </div>
           <div class="price-col">
@@ -494,13 +534,13 @@ section { padding: 3rem 0; scroll-margin-top: 64px; }
               <p class="amount amount-sm">$500</p>
               <p class="per">per home health or hospice report</p>
             </div>
-            <p class="price-note">Amended and prior-year reports are quoted on your free call. Hospices: we can review your cap with your report and quote both on the same call.</p>
+            <p class="price-note">Amended, prior-year and hospice cap work: quoted on your free call.</p>
           </div>
         </div>
 
         <div class="promise">
           <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5l-8-3zm-1.2 14.2-3.5-3.5 1.4-1.4 2.1 2.1 4.9-4.9 1.4 1.4-6.3 6.3z"/></svg>
-          <p><strong>Our promise:</strong> if your cost report is rejected because of our work, we fix it at no charge.</p>
+          <p><strong>Our promise:</strong> rejected because of our work? We fix it at no charge.</p>
         </div>
 
       </div>
@@ -510,27 +550,21 @@ section { padding: 3rem 0; scroll-margin-top: 64px; }
       <div class="wrap">
         <div class="retainer retainer-big">
           <div class="monthly-copy">
-            <p class="kicker kicker-gold">Monthly retainer for home health and hospice</p>
-            <h2 id="monthly-title">Go monthly, and your Medicare cost report is included at no extra charge</h2>
-            <p>One monthly retainer covers your books, payroll and taxes, and your annual Medicare cost report comes with it. No separate cost report fee.</p>
-            <p class="monthly-price"><strong>From $800 a month.</strong> The exact fee depends on your agency's size and scope, and we confirm it in writing after your free call.</p>
-            <p class="confirm-note">Most of our clients work with us on a monthly retainer.</p>
-          </div>
-          <div class="monthly-list">
-            <h3>What the retainer includes</h3>
-            <ul class="checks checks-light">
-              <li>Your Medicare cost report, at no extra charge</li>
-              <li>Bookkeeping</li>
-              <li>Payroll processing, if you want us to run it</li>
-              <li>Business tax returns</li>
-              <li>General accounting and business consulting</li>
-              <li>Accounting questions answered within 24 hours</li>
-            </ul>
-          </div>
-          <div class="monthly-cta">
-            <p>Not sure which fits? Ask about the flat fee and the retainer on your free 20-minute call. You get a written quote, with no obligation.</p>
+            <p class="kicker kicker-gold">Monthly retainer</p>
+            <h2 id="monthly-title">Go monthly. Your cost report is included.</h2>
+            <p class="mprice"><span class="mprice-from">From</span> <strong>$800</strong><span class="mprice-per">/mo</span></p>
+            <p class="mline">Books, payroll and taxes in one plan. Your Medicare cost report at no extra charge.</p>
             <a class="btn btn-gold" href="#book" data-book>Book a free 20-minute call</a>
+            <p class="mfine">Exact fee confirmed in writing after your call.</p>
           </div>
+          <ul class="mtiles" aria-label="What the retainer includes">
+            <li><svg class="ic" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg><span>Medicare cost report</span></li>
+            <li><svg class="ic" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/></svg><span>Bookkeeping</span></li>
+            <li><svg class="ic" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg><span>Payroll (optional)</span></li>
+            <li><svg class="ic" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 2v20l3-2 3 2 3-2 3 2 3-2 1 .7V2l-1 .7-3-2-3 2-3-2-3 2z"/><path d="M8 8h8M8 12h8M8 16h5"/></svg><span>Business tax returns</span></li>
+            <li><svg class="ic" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg><span>Accounting and consulting</span></li>
+            <li><svg class="ic" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><span>Answers within 24 hours</span></li>
+          </ul>
         </div>
       </div>
     </section>
@@ -545,17 +579,17 @@ section { padding: 3rem 0; scroll-margin-top: 64px; }
           <li>
             <span class="step-num">1</span>
             <h3>Book a free 20-minute call</h3>
-            <p>We confirm your fiscal year end, deadline, MAC, and utilization type.</p>
+            <p>We confirm your deadline, MAC and report type.</p>
           </li>
           <li>
             <span class="step-num">2</span>
             <h3>Get your quote and checklist</h3>
-            <p>A written fee quote before we start. Then you send the documents on our checklist.</p>
+            <p>Written quote, then our doc checklist.</p>
           </li>
           <li>
             <span class="step-num">3</span>
             <h3>We prepare, you approve, we file</h3>
-            <p>Our CPAs prepare and review it. You approve it, and we file it.</p>
+            <p>CPAs prepare and review. You approve. We file through MCReF.</p>
           </li>
         </ol>
       </div>
@@ -570,24 +604,28 @@ section { padding: 3rem 0; scroll-margin-top: 64px; }
             <div class="people">
               <figure class="pcard">
                 <img class="headshot" src="data:image/webp;base64,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" alt="Carl Soriaga, CPA" width="336" height="336" loading="lazy" decoding="async">
-                <figcaption><strong>Carl Soriaga, CPA</strong><span>Founder and managing partner. Preparing Medicare cost reports since 2003.</span></figcaption>
+                <figcaption><strong>Carl Soriaga, CPA</strong><span>Founder and managing partner</span><span>Cost reports since 2003</span></figcaption>
               </figure>
               <figure class="pcard">
                 <img class="headshot" src="data:image/webp;base64,UklGRuAeAABXRUJQVlA4INQeAAAQsQCdASpQAVABPmEuk0akIqQhJ3SagIAMCWczT/DuugeQHY+8D/vbs5jDtcjXAvFhpgey5pt6DznpjTgw4SCq8247iXdNAvd285f7HjQp/H2a0GHnvBj+2764taonieBsx/2p3mSKucjpFZI593eW/xkPhLr5WVxQ/ymORnxvc2BqJVArQxJD8xPytN3H2lDJ/5bNns0E9bQu7vaU5JV+M/8D5Hlam/GowgsG65MhiZq8bgR4tyrsgyb25nZx925sQhvGsKSLgcDJfiPloDVXBYElhphF7twAotw/qqu1Cu0cgw3MytTLtnrtl1HD3AWpgckNlP+WAQ6kEAsn44xV5cblpbwMoRed3ivM9vmJFdrl1Kxw57MpA2/PHtGg4565//ssJ9FiQu9Yuur/qkDiT/70+3a2hYuhYt8nKTyRwzKKzdvimObYSzN0G/RCSEb/fr6BRtnOXt4Hf/vDCjORtB7xEDA4CIEYGBSs7DpeoLQJNr76uvhEi6cgpN9hKzpvlUfk4fXFJVRQ63VbXCC3l2ouP6oqZQY+9ezY+n63VcewyAkA4r0UO2MGDsyZKngtW87+VbZqGhl1eBXkEsYgNt2w1YjOeJQXQeCi3l0XZRucUpB1v9EzcjBrzCgsNnRONEzK2MBNCXaF/pReFM/G67nazIH8Z1Bs7ygJTt9THBhFD4wR2YS/+H37lBInHkE2OxLRhgSXAPugppL6UVQudSQl5xY4Ia0peCo0L/Pl901Ick8oenshEAkbl0bkcPAqba6RvaLHJaWQEruOO9/y/8wiQaibS584YNTXtxRKDcFGVR1Y9eQ0OUCd0zy27jgjbEd8qlU0pdkl3E3FKPKypYUXPypiCDvBaBBBPjp781EsQl26whZ9k1pIaoQaXC56gwnWo7zZYvfjV/3w5wJyolsEkznEezZ1O4hJADZ0hMB0PXJb3u3vWqpF4DG2tXnQGIc+OnBSii3wKWSPtVt/t4nyzZk/xFMA+EL0fVOTWTcUq6vd+psPasF/2c3c5i2Syt5Aml4KJUEHf8nXMa89NfjqGr+/lijXiZeod37zU/iGWFHS/FR0f1tu2mHn/JtSogAZhUW3FOl+AY+aTu/9Pj4UrmvW9MZ23SpJit0+K/5osH7Qgl1lZgG++LPbseMe3kGA/Dul4weozUmzyGYsR37mrEXhwVI9nIRhufHyX2mqb1ziU0buk9j4AFs4MMHWBLHBuwTalAI7a10VJ8FRZa9w2sGP1n9MDkdBUIatpO4rCPLurEWKXoRdw3lmECRYluhCLjZ9853gVEn/GVYEJZXA8wPT5NrE+DYHdT4SntvKzYv4rSPqmvOIjcMmPqj3CnlzIolBnAI1c06HlyA6UGVxzE9Uev/NWCFVvSEfaMnIN/EByYosDF0HSeS/Ip/6GlVPvf+KJpeCdEXd+Jgv+ZF4jRAK8Ve/Y1QtNtIhw6PwY3lQ4rVEiE/Dv+aG8eI+FnzWwT1Mi/mBkzR+k1QeSSaAUAN/Xz+PI1eFELGl1nA21TQnwt2HqT4CMd6JBzrRsem5hykzhocSKgp54/FeXYq4+51N+/pPPABHWsiHWh9sdDVxxSVnD6xQZa7fg+fu7C3XY0nlMl2jMZyGKHH7/FeWfx8Iw0eqgmITB4DViZ25UqpvZ2Ral7ol4vZe7Nix4FVBXKdkrUE4DiH4ksqtNIgKLxLlO2aQjlsKsct1zgqqcW8RklBNHV3DtYYRw+oPBKQugb+2tEOOBVgPz7hUFczWetfMBPz6cSP/7HJfPZ0jkOW6sc4IdeqNnR2tMQ4sJ6NJ+5NKgOXTAp52N9aVFgENkpgYpQezmpNaALpe09WyaWInn1ksDngipus4CWUfJ40ylOLoFpdFRd2kIiKaS2+7JoK6UJHUB/VTkDuIrgAA/uGz2uNb0dZsRdLAE9Qbl3N8993jNuQ4OOH+na9eDFDMK4L6qqJQBnktdS3t6wROzh2AqdmI7hxNcQqpSIPUOVmPfgvksfTGe/v4zEE4V5kAWzj/O5IyTtUAu0u0zG0S8shPTUnjtkKas2q20X9uuKV8KnvMqUjJ+O0yUQBE9tdPCUIj9f5AaXmRRmgQOt6jals0fU1etBReMUYZy68at71TxwM934ZZs6nOufweJsD4aTXKD5Fy0KuJG/QDO6c1BS/SEJdLJ7UBCRPrTH4NO/wIyNdeuHt4BIrFuL4xgZWtTqMLWzckJJ31fXpcsistRZpjc+5tUuzGRxKKA700BlGpeuv1lsH9s45gba67l9siAG4tlFbNjLUC2leVzrxRpi07AyTz26Ia5ee1O1LPTxh+n5NTCtSF34QltxwwUrUSQvPUaCUGyHFGBCpgdR4ad/5B1srWDEFRjbMlFS1aIbANYlxmj2h9YL2hXQR1qEPVvFRPRuWQJ8OkT5X9wcW7CMI0AX0orn3sFGtstBpU2lCdkAQMnbAVllQI9RobIWdPjIXxxWOhz1t4O+iZgtVuLqHjQaWNhodw7Nvcfc2gZkwrkZAlD6EYX+BHUEbHaubyfztArmMCPxq69h73l1LT9TmkwvogPwZPOaKrhxZbXVsHJIscvk8SdD7GC74yfZZOy/lG+xu6ZstQYSaWiZSoY/yl9+GQmERtWlnKF4A2HOcLYSE8HrrWP9jUJIPcDvo5iK48tJdtsY/6+FK4MYmO8XHa1NgEatDVcyDOwXsqLdfhXdIspojPCiJq594LJDeFUD/EXpLNiAXsQr9VzQVfEY5UzkAneJ57/js6lLEDVgWnRTt99t84fAq+9PdfXiuXfam3CkO47+QmoR5Bb5sH98pIMwH/hWL1lRSn18IDsxYlwBeadyaNzDwT9NzZeD79+e5XMa+0nJJ87UPx/KZtjLD5tcsjkYoGC3h53Qr0A9gBBWxpM5DxLi2A0EsjZLiRS2QS9PAgafVIXDmaPbn6rSxwOdtce0pAeZpYWBoPB/MvFEcSukRXdXAdLGTa/tJWOrOzCsv0s7IlCI8RLzBFbh061nnuAW7s10QisOBnxUQTIt3z97uOLyC5bg/RoT0IeZ3cAoeGskqZaHvV/Hqe3b/ixSNleLS9tUS2oLktDe08mMgLb8N7Ayyvw5ezloHk07rQMr1YsfcSy3vAXpNF6slW2W8tJkr733ZJ2W9EP+RmnYF/5Fd7b69kGJTcqQpiL0x7iAkkPw4d9wbFZ4XR0Sm5bcmkJ6XbVj5JCejcpnVoO0dzOGTg7QmVsP6GqaV1KrTDn7twa9OaMyO+vB2w98LFwU8XBdntHuXZdCTdXz4cPgYjo1+bUWjRX9vppXbWnpPjlPlcG+6sOiz8xxqNMk5r4PqS/V5LwkEQX/b98Ihoc/euTSVgeALlNCDCweT9tyxQu7cfgQNiMMHO5ND/dT6nWXRkR3EWDWeEH8EqqrclQH9yuJmn8N0qO+ZwodBmV4lB5efMdt0ILkeS/fZLScAi5wC0p5TVJ2mRebposj5wD9YFCDKMsbtmZIAGA2wwmkzZ2IeDZST9JgD1lQKlLGm5kyIu8iide/laDLSHcbyNRVR/OULrR3Cc1vIzVd8lrFEFHsbbJSXehXrm19snxsmjJRmPcJ2+fyq9dKcCMuXTubRgSFTcLV8uWSZYfWWO4uPIfoXKWZQsWVMeMdbBwQalJ0Gmv+c5uQBpy7aZBV0jZ8VSYYr2oyC25vlfP4PnLajuw3PB31olCWIP9ijRluPlhzW6y3iO0kHkkjIBVGHTRHiMpZhz4H3SEADWuJhp4YcUWDKdwfeGc/b8UjMu7k+Zt/ja47NdJ0JXledbcIr2SsrO48rBE/OY1ajPdRR5sPP+VNC19OdxkMgziil7AvLi4+n7s3Wu9LFmeDqQyClL0VW9yhW/NA+D1OSaAzUiBn48e1X1ztJlWOpKgotkNUYI+Jm9sA/UX5X/B943IcWjiW6fcTA5zTsqptjdzq6s4GZUEXuKUOAwy0VDBHUmMM1074efRkQlxtiaWxS2JW/gCD0ptPQ3tZoJgivGqalCzEss8qgLMUwGCayTfZhOJEOxfTs3BX5R+gR31OR85C+xN+CZ8rFvyt35go4XokPAWT6XEfD3DOU0Bo+BV5JfT9fvFZ0maEZvRW7jOCLW3tQMUe9sm8BIVPHiUnPg9vfXxJ2fJYa/PMXJjCRRm6Jglomx3/W9qyWyfo9A9ZQIbiR36dGu5M4i8v7ZJ5ap2O67+f9Fzndvbr4CzKBR2I0IVdbtGdsTPg3fegALWHSA1QbbzF5vAsfiKwpCb/1sp/t5a6WZdhG1jfJR1LFgW0iKEDm4PgGElnoejWfOV36kG/QRNgvaJA/sMAD1vVm7mk67weO4hmyB6dJffnL7kM6CusC1TETPKif+BfsOhMJjd0TigfBjp28qR5Kzn8PDMtA0lf9hSlivHUFKFi4Z/Umlr5C/PhQs2WmBrRWp5fuDl8rOQBObHbUzD2LH45ytiSPpAZNVRDH3t4lFwLofS6wksnfA/pqZRbcXIhVJml4KfssPZZ8ewy2iwo7M9ClVZ77wNWVXySpbiBwpSstrKT+mU+40JyP12aFR79ZYsf0qDHchFGKZLbDEuea/SzPbEYkY0uyGYOhZ+geQQ+3v+K/6hTJWm+UQvw+NHJyqtPhAbPFbktsyn8j0dqQ7AY+0tM4XhY0GjT6jdKTKwroKRLgqzv60UgOW609IqceQbsgi5mTCnnicpQWq3eWMkrvh4j5i3grtL3YW+N6eqTN1Yk9J53KtyD3+J7qMK7SxwNF8i1cKdHwn4aq+A4DQV9hQszY2d/FqMPQTdG4vpziy/7VRKyqDb1p92aPtkwODINtmt7ljobq7yLl9XJ0cjzksbFduJ7rCcveKILFYtbprE/9ojCd5CBcbNBV3OPbmCIUUqU2gTDDXS/+KhjiGNgc6efv+J9q3ZailSZEmMgS0EIXyhYKaIMbLIxT+QP3ltgaHX0FNnDZ5UXCHphLUQ6Mz6qbttWshZkWXmhOaZ3ddnHrrgnSalFwjBcDao6IxQQsFMaTOAyIL5rw5xriMBtZObMlDF73qDTIAowZU0BA5ujX6CtpHT3mtNiLdFK2foPljZUAdRPNhCXNoRoGT6OF6TOtK4ECQrf7Sfeq9XDIRSYVtt9LdMLkPovZU145DjQSYeX/nIE7BzUufpwltD6EhfyHu+jY4iD8dZpXOU6YTnCtOkXo3XTGKqy/WHcCJGAIgpWHtmoROkuUJYtn7JOmgDGu6Sjyqft5ZADPMpHsTfxSJ7x45AA5YZvTcaaqRHIApFUgJJszZfwlZ9K9zKBewV+xf6Y8cymPIz+OdDbnspg+N4bKxshKrOhlown93XvtE9RnOwby30ZLYMMeNsN/z4E4jWrLhBRuQLCAwWwGQJ7ADyTQduOlYx591sU6aK9F9k2MH8b+cI72LQrG2HdFzjLqpgVPKYWVuPpydWKBubIcKmvGvg4NkH/sDBwfpOqCpdANhqPc/lmyX5V2qPaOkLMZJwZSRmgG3Ine+kh9vLAaIGhu9SjKIzefbMmvQO2kpM34Ykt/dOumcL/2FgllF2lQge1LRG4MM1WxIbrpxhHCxc8o7S6Zzia1JJt6pEixeXp8NMBB57Xcuij48vg5sUvOUokS956K2kBg3FpTb+FdgT+E5bbXQtngLU07aE7EUnV6JcPe8XErm6mlCXiY38kTwGE2nEM1S8F8bBpweK7wgE0cDL0k/kdDlxNSHERerCOGRCo/QFjlAwfp0XpTPYbLvN4n/aTPtctaWh5L0+87QrVBakeKkLnN0tODyn/NeWQx8F9u1OLfMoYt1783+zld70p/OKANs475gIDA5KqUCRYItoYuF2K0UjvmsYUPwmOgU3s6R7xwSP9pVymBMCdtdZoVFXyF/5NdaeLqlan3qCZitEYwVulPXi0LE97NJEC5eLirvFy1Aom19uFyOlBlMG5yfvaXGtHgF5BfuimSRg+dhNYFI3RnlZr+4e7CpS+aT2VE7e3T6UIEDWuQMFnTU6enHsLi0911v9DvpFiS6v48cZj0etcp6xR2W16idlLUss2UPiS5TEZVJEawwzMK28tp5ZXkPHojPIodZ1b16l+5BaDydwL2aZbP+A2570QV78JE1onQu2oBclN3kd51DPLh64Ur1yWPoIwGO34Bl4+5C35fW3VJQ0+YWiDsuZJQfoTAMiznj9Y3zfeCbJheiek/wfYQawKFO8QYzTcTqygggC16SG4MLHnBY/tJgQ82MQOicppz4CDM0RQ85OWNkdpX1f50NW8SpUgMRyPCJutM7/FOZopXn94x2jmQZiHHm84GKMVo8RIxLKx+zYhuvCbjuEMuBJtelMp/qJ12VaxOO2n5vB/FesXuPJcAgoB4k3CAjOPvtrRZr7m+yCijnNUkQeOHHB68OOHHsa3M/JOVad2RXT+AIpJimccrgLg0DDbODFfwCKotog0P2WZu09fL5XjO4n8uqnZPrw5LtklJQItRQ4jMzkQVu9Xht5f+AnPMuPEvfvd0xwiQz8EvgYcXOdfqsHsxcYeMR9SGAWO6Jr8ku0uCPvdorYtlm0rLECb/wWWemPiyrMGLBVHvhu3JCgqEp5SJTHH4BFRPOv69WLVv2jGEv59PFvrXj8KfVIexHgvGiY7Lx5O2OBiaVHldssDDvyIZkuzqiQSfYeg7oMiBsBGiP5sfr9k7avPhonD/QkmDjS6tce0zxdYSZqU+qx+cHk9HNBk9Dysu8MtO0Ag/dU8+H9Aicxy2L4dYNOjqjwFG9WYYTAwvgWnctBLDvYqTlpRBQITyNhsEVcw8O9YQwib1nFYjk3Ul7FBr2g1v7bLdSofvoCim5DRWGOkFSd/FVw4zt+tdBHAvAU5NJDKiY1s0+jjbYptJHLHdycTT+ObGu6T7RkQ22qM/Pjnne5A7auyj2m6dBLZgUrtntlCTvucZT1wk5eGk2ql0oSUifDMqiH0sxA15P1NYRdacJh3roHt9GGmTZWVmTKHjkAkwspjkRxP6eilXCrh3vVV+6snMnfiKqqiU5+c3EVFYA9IBglBE21LKAqUSHEOKOaMPdLfK7j6e5c4qGS18JXAg/YWXkkEYwvKyzy6TLasRY1JEZUDa1i9MWapFkAze+DAbQbdAFPBoLQQLzgQJuq01kffI/sU7h56bhj8rEzGS1aWvBUOiMufTfoXdvsAuje9VsCptGxDpkAQ9COmpsRqAhm+US4FKZuTvdrdONOtsHO8wdOgh7dwsNktyVZJX2YCX4gCnFqDE9kOy31eVwkfLGmwBMiw26NWowUxV3ptetmbVt4ppMPp684snViSNBHv/1gOc32rbrWwznilLOLHEZBEvwUvudaoGNbue0n+MzMDF5o9IZZxz0Ni+7o5XJx9i1EKwqoTn29kfHQ4FmH8HXtOZSLFu7aukvsg3+L9ZlGr9lchc8kDoaiPPeKNwvYFznE4G8BsbDawCOReNA/tXQWRZNCsisoZrx8xXizl7tEx2XPwWM4GpLPK/9Ww00gDrWDM6ZzS+407EUo5LlkjmJQBuPGSboNNbfCkA7FhKq5vrG0k2BRNta0SBZRE0jkpggpkfLYdltylt9i+4uyXtMj7CEn9TMsnDdqi7uQpGYl6pvASCdvcHZUdSk14RBL5+qPRwa0IvP4CmYl93OE1EpkKq70n55znEgh/o39CLBwiHnCNptvmh5RWEFMAqAXpZuX3mFu4bqm68WrKPRhmiv+7zcMX7ZyWR5Ghnh0PxZRBZWuXnl1z6ReKyqRIQ0aqCvoGXHX2gfK1FV7v5C5tTRkqZDZwlB7kR+y16MGImexCSL3Wm+hOC6+iOuM3WAkYPeDngxhzrJJTsaXaSrhDBjppDxylRsMY3pF2bbkpdlEWCk0y7uZEuNXhQSlY4E8rMr7xlrullHlk5WCVso0WiAhdZ9OxlDtrB5CCkq0QOqa5qW8NZzSDnobVUdmPzK+rcNVhQaq/1e+LgppwRF/YjKapJmggTKAEFswHiLe26Gj8uXQA0Zp8QU7lj5Xs94X5gP92lTtLMXbyi0lV2BBi4OvVj4MboHYvu1N+aHbhR7/S5OURtBOpGjI9ex2mVpc/MMPTQ9a4dZ7m0/f+NGpzwt1qJIVfp5gwXO1efP87YYK2tKO+hY9iTPWRMfmD9w5/YxVy30CIJXDbxbdtywERE5I8HeLcQInbYGueGgAx7zRmbxljfPoJVdN9ZPTjkL57sek5pa0BQS3yn7/vcmaZ6W3f6apCue53LGkMKZXoAayNyQz6j7EMVtbKBw0VcD2/uFiNCa3WNcluPofkHo3jS6Il2PAULb7U5ato6aAhDFkvojW+MqvxZOYtffcP2kUGlqlAJCwU+3Hoc9HUhj+AeouhXLzP5QMvzXZpLNuhMpTsx02wmfn2ihx/EXDa7iaRY9dj5VSVPQmfjXuRstBfNLEsU4DxoCjDoD6J+V01/c/z35OLImAB/dBcQNYJyHLJQJAsoTLhNUD8YimJUAp6z/DaLGj80CU3CgcQsMHFYHh2NAodTYhMXEq7nEHdCrLF9Dt0LRq5s1M54kI66XET6eTyDL/32TKXMI9aTsxt9swvY77SnbjXCziLZnVXEALdUI7jJRvYYnw6pvWQGrVcEqu8Ck2wu8N9sSmwuSFuYuP8AoFOFhlWh1gxZqeADJq45SuCZsoKf+r7zlbsZaQSFV3Cw6nusbtp902o/MgHFlh40gAHEO3oEe3rr6RdEFYmtyZT48i4fBc6/nmSFFpXVW7HvcCG8SrULgX/9+cG1LephBaxJ7Rt2XPpeev5bOnbXNIp/S0XYuZR0j6pQoEv3zLNdbGJX/5r9AlMqUjxT8alEASFl4mWTD5WNszZrG6mcm5yggykfg8V8KwGRZuI4KgEfI7G6b69m6DWDqOtLJrV2sQfvzSMmjxmdHr9pTEr/CUm//DOMrS3eLTILQ76/Q4E6h2OmfNNtlslYVntyJj9Qh2HdiaNncDEwp8gtwIUs4VT3rNHuSnAECZwjQOiye6aXs3BdJhE022kiDLcoE5csfAlC2DNfa6y/xdiza9OLs7X3vch7QzEeZ0sKH7aUYuN7qkTGIiFE2lepE5vz7aRDOEbAuBkQDpsE4v0bj6s3yeYePuVNcoXEogYsgcxKEIIN779uN+JVOtIuepX3++StUgKT+tR/Ev4bBQCzwfJ4Me09C+fbay/XAfdM6RgET/UJfm5YlFq8vui5Ks4tvDeRY8R50SrlJY3R13+USXQrelzWF6B7k9JDVq7cDnlz1pWfhA50CsxbtGelSoryBxnnMkqSQufE8SbWXDm9g16yVPBXswQIdjJy5KoV7K39WO6e3d6GbJNrC981RhzjatKSHruVFB3UUBPPope/EBGlh9G0zEg72+pFdNi1pTbbo3HX5iNCtgd5N8lwoZUxOgMA+GjZJ+SQ/9ycOYwBMTFd9lTYpJ5kWYNmYJ3qKrFDg2ALOOV3EaNpiSCX5YsJxaaLjd4YqOo7p5poia14goSetjqSg9HtW4CBP36K1bFp/AWe99Ch8BEQeXjDm8tyfUG2WgTrT6DMwANpCT8buRep5d6Wems8Ciq9tUAoXOsZgjErkd8LIA5qNF91bQzrcxwda+1U4KBNgmuCzYPIhX0XEzRY5ANK2sXaQppJ3oRsb82bjtSCdVPFlVYShF02QBFMGlTd4gkp0NpnAzeWlyISjgjYsdlwxuwdO4B0UsL5yD500UI81rsSCsM/vH6Uxn3YorfgBoNoAm1f3DEl/qMKSmIVecqrMfknLafFkjirQyw+IcTU4WjwU21gQHgYaHCbcAL8EcyK5qQnBAQtig6rHBETmNt5tfdErt/kDtXYMKXMvmuxlnm+IlRGpGR0KZu86qEEtqks1zs8vJT9wYvCIBFZkvt9t0+djYnuZs1JzKgU0Lc12tH8TOXgORrU1Z4dLojxStH/yeQOIELFGIb+/aXNxlWhQeifdfxH2SKsj8G2BEdoecgpJIQJP3bteSuEDDP9E4PXvO3XptJBWYTlgxzrN95/w71kD6x889Mar+dGbDwZNsE6/KoYzookWYUMBhK/Kg48O68IUuscjt4AmbC5Bhk1BYrgVbT6krJwuWxKba8XiKHjdoK4TW9V4cHyHE+CoTbo6R7LM/WYr8wi/TKOHpehq9Ext0BsbkzSP0bHZzhjwiBR5P0yipCC0Qn7ErfYjGbYCQboUPfS4rQmKN8uaVJe4FMKorkZCb19CbWlz1sowhG2iNoV62FtvN0lZVWCBiVyH7mTUyWDDRp9P4/9VWVs2O9XqFcTnucuxWIrWy5+rm3kdtDdAH5gXDeDu/KBxWmgpa7CLnmjPVZwptP7P6/hxotzRKhzqfcKMcNw/Ry2q+xAMOMqmwXyfynEqAUVNu28fiKnvlbhNrK0m9aFNWKcoNidTzVOwUANVBHWUaTkQaHvnyr/qhBFNQUk9M5RqmxJnAElmtRGFIM0GIOom4i/Vb3VzPNk6BkBGJt8MQBZt4FfqDCzsbVXRQ3wcYoVBe5eKQ12sIXzCDYoX0GFDUuGg0Ttt7QbVVQl1ttZ5074IfKEV1AAAAA==" alt="Christian Soriaga, CPA" width="336" height="336" loading="lazy" decoding="async">
-                <figcaption><strong>Christian Soriaga, CPA</strong><span>Prepares Medicare cost reports and hosts every free call.</span></figcaption>
+                <figcaption><strong>Christian Soriaga, CPA</strong><span>Prepares cost reports</span><span>Hosts every free call</span></figcaption>
               </figure>
             </div>
-            <p>Carl and Christian prepare every report in WinLASH, so you work with the CPAs who do the work. Christian has prepared Medicare cost reports for 6 years.</p>
-            <p>We prepare 50 to 100 Medicare cost reports a year. We are based in Lisle, Illinois, and work fully remote in all 50 states. Christian is fluent in Spanish.</p>
+            <ul class="team-facts">
+              <li><svg class="ic" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Carl and Christian prepare <strong>every report</strong></span></li>
+              <li><svg class="ic" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg><span><strong>50 to 100</strong> cost reports a year</span></li>
+              <li><svg class="ic" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Lisle, Illinois. <strong>All 50 states</strong>, fully remote</span></li>
+              <li><svg class="ic" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><span>Christian speaks <strong>Spanish</strong></span></li>
+            </ul>
           </div>
         </div>
         <div class="fit">
-          <h3>Is this a fit for your agency?</h3>
+          <h3>Is this a fit?</h3>
           <ul class="fit-list">
             <li class="yes">Medicare-certified home health agencies</li>
             <li class="yes">Medicare-certified hospices</li>
-            <li class="yes">Agencies switching preparers, or with a late or rejected report</li>
-            <li class="no">Not yet: new agencies still waiting on a CMS approval letter. Please book once it arrives.</li>
+            <li class="yes">Switching preparers, or late or rejected reports</li>
+            <li class="no">Not yet: still waiting on a CMS approval letter</li>
           </ul>
         </div>
       </div>
@@ -601,44 +639,36 @@ section { padding: 3rem 0; scroll-margin-top: 64px; }
         </div>
         <div class="faq-list">
           <details>
-            <summary>How much does a Medicare cost report cost?</summary>
-            <p>$1,599.99 for a low- or full-utilization report, or $500 for no utilization. You know the fee before we start.</p>
+            <summary>How much does a cost report cost?</summary>
+            <p><strong>$1,599.99</strong> (low or full utilization) or <strong>$500</strong> (no utilization). Flat fee, quoted before we start.</p>
           </details>
           <details>
             <summary>Do I have to sign up for monthly accounting?</summary>
-            <p>No. You can hire us for just the cost report at the flat fee. Or go monthly from $800 a month, and the cost report is included.</p>
+            <p>No. Flat fee for just the report, or go monthly from $800 with the report included.</p>
           </details>
           <details>
-            <summary>Who actually does the work?</summary>
-            <p>Carl Soriaga, CPA, and Christian Soriaga, CPA. They prepare every report, and our CPAs review it before you see it. You approve it before we file.</p>
+            <summary>When is it due, and what if I am late?</summary>
+            <p>Last day of the 5th month after your fiscal year end. Late reports can suspend Medicare payments. Close to the deadline? Book now.</p>
           </details>
           <details>
-            <summary>When is my report due, and what if I am late?</summary>
-            <p>By the last day of the fifth month after your fiscal year ends (42 CFR 413.24(f)). If it is late, Medicare can suspend payments until it is filed and accepted (42 CFR 405.371). If your deadline is close or has passed, book a call now. We tell you where you stand and what to file first.</p>
-          </details>
-          <details>
-            <summary>Can I switch preparers in the middle of a cost report?</summary>
-            <p>Yes. Your due date comes from your fiscal year end, not from who prepares the report. You sign a permission form, we request your files from your current accountant, and we follow up so you do not have to. Then we plan backward from your due date.</p>
+            <summary>Can I switch preparers mid-report?</summary>
+            <p>Yes. You sign a permission form, we request your files and plan back from your due date.</p>
           </details>
           <details>
             <summary>What documents do you need?</summary>
-            <p>Usually your PS&amp;R report, trial balance, payroll records, fixed asset listing, last year's cost report, and any letters from your MAC. We confirm the list on your call and send a checklist when we begin. The 72 hours start once your documents are complete.</p>
+            <p>PS&amp;R, trial balance, payroll, fixed assets, last year's report, MAC letters. The 72 hours start once they are complete.</p>
           </details>
           <details>
-            <summary>What if my MAC sends questions or my old report had errors?</summary>
-            <p>We help agencies with amended filings and audit support. Amended and prior-year reports are quoted on your free call.<br>Questions from your MAC about a report we filed are answered at no extra charge.</p>
+            <summary>What if my MAC has questions or my old report had errors?</summary>
+            <p>Amended filings and audit support are quoted on your free call.<br>MAC questions on a report we filed: no extra charge.</p>
           </details>
           <details>
             <summary>Is the hospice cap part of the cost report?</summary>
-            <p>No. The cap is a separate filing with its own due date. We can review your cap with your cost report and quote both on one call.</p>
+            <p>No, it is a separate filing. We can quote both on one call.</p>
           </details>
           <details>
             <summary>What happens on the free call?</summary>
-            <p>It is a 20-minute phone call with Christian about your agency, deadline, and report type. You get a written fee quote after. No pitch deck, no obligation.</p>
-          </details>
-          <details>
-            <summary>Do you work with agencies outside Illinois?</summary>
-            <p>Yes. We serve all 50 states, fully remote, and file with any MAC.</p>
+            <p>20 minutes with Christian. A written quote after. No obligation.</p>
           </details>
         </div>
       </div>
@@ -649,7 +679,7 @@ section { padding: 3rem 0; scroll-margin-top: 64px; }
         <div class="section-head section-head-light">
           <p class="kicker kicker-gold">Free 20-minute call</p>
           <h2 id="book-title">Book your free 20-minute call with Christian</h2>
-          <p>Pick a time below. It is a free phone call with Christian, not a sales pitch.</p>
+          <p>A phone call, not a sales pitch.</p>
           
           <figure class="video-slot video-compact">
             <div class="video-frame" role="img" aria-label="Video coming soon: a 60-second hello from Christian Soriaga, CPA">
@@ -685,16 +715,15 @@ section { padding: 3rem 0; scroll-margin-top: 64px; }
             <div class="side-card side-steps">
               <p class="side-title">What happens on the call</p>
               <ol class="mini-steps">
-                <li>Christian learns about your agency and what is due next.</li>
-                <li>You confirm your fiscal year end, MAC, and report type.</li>
-                <li>You get a clear written fee quote. No obligation.</li>
+                <li>Tell Christian about your agency</li>
+                <li>Confirm year end, MAC and report type</li>
+                <li>Get a written quote. No obligation.</li>
               </ol>
             </div>
             <div class="side-card">
-              <p class="side-promise"><strong>Our promise:</strong> if your cost report is rejected because of our work, we fix it at no charge.</p>
             </div>
             <div class="side-card side-call-card">
-              <p class="side-call">Prefer the phone? Call Christian's office.</p>
+              <p class="side-call">Prefer the phone?</p>
               <a class="phone-big" href="tel:+16304911268">(630) 491-1268</a>
             </div>
           </aside>
